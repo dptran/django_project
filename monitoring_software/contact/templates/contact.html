@@ -1,0 +1,25 @@
+{% extends 'monitoring_software/base.html' %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+{% block content %}
+<body>
+
+<div class="container">
+    <form id="contact_form" method="POST" autocomplete="off">
+      <fieldset>
+        <legend>Contact Form</legend>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" onclick="resetForm()">
+      </fieldset>
+    </form>
+</div>
+
+    <script>
+        function resetForm(){document.getElementById("contact_form").reset();}
+    </script>
+</body>
+{% endblock content %}

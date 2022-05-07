@@ -1,0 +1,37 @@
+{% extends 'monitoring_software/base.html' %}
+{% load static %}
+
+{% block content %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <div class="white-box">
+        <main class="container">
+            <div class="row justify-content-md-left">
+                <div class="col-sm-9">
+                    <img src="{% static 'images/nza_slideshow.jpg' %}" width=800px height=500px alt="">
+                </div>
+
+                <div class="row justify-content-md-left">
+                    <div class="col-sm-12">
+                        <p>
+                            <br>
+                            <strong>Top 5 Features/Functionalities</strong>
+                            <ol>
+                                <li>Track employee attendance</li>
+                                <li>Area based tracking system</li>
+                                <li>Live updates and real-time alerts</li>
+                                <li>Historical data and analysis</li>
+                                <li>Automation</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+{% endblock content %}

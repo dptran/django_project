@@ -1,0 +1,20 @@
+body {
+    background-image: url("/static/images/nza_background.jpg");
+    background-color: #cccccc;
+}
+
+.white-box {
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: white;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+.sidebar {
+    background-color: maroon;
+    color: white; 
+}
